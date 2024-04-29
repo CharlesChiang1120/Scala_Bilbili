@@ -16,8 +16,5 @@ object Scala04_Val_Class {
     // TODO 多態不適用這個場合
     var name = "lisi"
     println(name)
-
-
   }
-
 }

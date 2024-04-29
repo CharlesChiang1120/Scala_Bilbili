@@ -15,5 +15,4 @@ object Scala01_Desc {
      * 文檔注釋
      */
   }
-
 }

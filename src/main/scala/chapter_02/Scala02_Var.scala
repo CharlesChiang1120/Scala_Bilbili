@@ -18,5 +18,4 @@ object Scala02_Var {
     // TODO 訪問變量
     println(name)
   }
-
 }
