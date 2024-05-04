@@ -1,5 +1,5 @@
 package chapter_05
 
-class Scala05_Function_Normal_2 {
+object Scala05_Function_Normal_2 {
 
 }
