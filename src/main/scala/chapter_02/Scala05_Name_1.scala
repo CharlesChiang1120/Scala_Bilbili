@@ -1,30 +1,42 @@
 package chapter_02
 
-object Scala05_Name {
+object Scala05_Name_1 {
   def main(args: Array[String]): Unit = {
 
     // TODO 標示符
-    // 一般情況下，所謂的標示符就是取名字
-    // 類名，物件名，屬性名，參數名，方法名
-    // Java 中的標示符有規則的
-    // 1. 數字，字母，下划線，美元符號
-    // 2. 數字不能開頭
-    // 3. 長度沒有限制
-    // 4. 不能是關鍵字和保留字
-    // 5. 區分大小寫
-    // 6. 可以轉換 unicode 的編碼文字都可以當成標示符
-    //    能寫中文？能寫日文？能寫韓文？ -> 可以
+    // 因為 Scala 是一個完全面向函數式的編成語言，所以可以聲明特殊符號作為標示符
+    // 使用特殊符號作為 Scala 的標示符，規則不要記，錯了就改
+    // 如果非要記，常使用用在代碼中的符號不要使用：=, {}, [], (), '', ""
+    val + = "zhangsan"
+    val - = "zhangsan"
+    val * = "zhangsan"
+    val / = "zhangsan"
+    val ~ = "zhangsan"
+    // val @ = "zhangsan"
+    val @@ = "zhangsan"
+    // val # = "zhangsan"
+    val ## = "zhangsan"
+    val % = "zhangsan"
+    val ^ = "zhangsan"
+    val & = "zhangsan"
+    // val () = "zhangsan"
+    // val ( = "zhangsan"
+    // val  = "zhangsan"
+    val ? = "zhangsan"
+    val > = "zhangsan"
 
-    // Scala 中的標示符基本規則和 Java 一致
-    val name = "zhangsan"
-    val name1 = "zhangsan"
-    val name_e1 = "zhangsan"
-    val name$e1 = "zhangsan"
-    // val 1name$e1 = "zhangsan"
-    // 如果非要使用關鍵字和標示符重名，加反引號
-    val 'private = "zhangsan"
-    // 或區分成大小寫
-    val Private = "zhangsan"
+    // TODO 如果使用特殊符號形成的文字，表示特殊的含義，我們稱之為顏文字
+    val :-> = "zhangsan"
+
+    // 本質上特殊符號在編譯後會被編譯器轉換，所以可以使用
+    //一般情況下，不推薦使用$開頭
+    // $colon$minus$greater in Java
+    println(:->)
+
+    // 不能再聲明像下面這樣，因為是一樣的
+    // val $colon$minus$greater = "lisi"
+
+
 
 
   }
