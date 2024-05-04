@@ -21,8 +21,8 @@ object Scala05_Name {
     val name_e1 = "zhangsan"
     val name$e1 = "zhangsan"
     // val 1name$e1 = "zhangsan"
-    // 如果非要使用關鍵字和標示符重名，加單引號
-    val 'private = "zhangsan"
+    // 如果非要使用關鍵字和標示符重名，加反引號
+    // val `private = "zhangsan"
     // 或區分成大小寫
     val Private = "zhangsan"
 
