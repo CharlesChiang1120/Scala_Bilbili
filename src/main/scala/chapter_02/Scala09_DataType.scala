@@ -1,8 +1,4 @@
 package chapter_02
-
-import java.io.OutputStream
-import java.net.Socket
-
 object Scala09_DataType {
   def main(args: Array[String]): Unit = {
 
@@ -36,9 +32,15 @@ object Scala09_DataType {
     println(test())
 
     // 2.任意的引用類型
+    // 所有的 Java 類型，Scala 集合，Scala 類型都是引用類型
+    // 引用類型的取值為空時，會賦值為 null，但是 null 本身也應該有類型 Null，也表示物件
+    val name : Null = null
 
-
-
+    // 3. Nothing
+    // 一般應用於異常處理
+    def test1(): Nothing = {
+      throw new Exception()
+    }
 
   }
 }
