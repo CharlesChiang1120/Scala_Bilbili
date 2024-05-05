@@ -26,7 +26,7 @@ object Scala06_String {
     println(s"name=${name.substring(0, 1)}")
     println(s"{\"name\" : \"${name}\", \"age\" : ${age}}")
 
-    // 多行字符串
+    // 多行字符串，主要用於 SQL 和 JSON 格式字符串
     // 這裡的豎線表示頂格符
     println(
       """
@@ -34,7 +34,25 @@ object Scala06_String {
         | scala
         |""".stripMargin)
 
+    // 想把頂格符換成 #
+    println(
+      """
+        # hello
+        # scala
+        #""".stripMargin('#'))
 
+    // 主要用於 SQL 和 JSON 格式字符串
+    println(
+      s"""
+        | {"name" : "${name}", "age" : ${age}}
+        |""".stripMargin)
 
+    println(
+      s"""
+         | SELECT
+         | *
+         | FROM user
+         | WHERE id = 1
+         |""".stripMargin)
   }
 }
