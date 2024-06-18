@@ -5,7 +5,7 @@ object Scala01_Oper {
 
       // TODO 運算符
       // 關系運算符
-      // println( 10 < 20 )
+      // print ln( 10 < 20 )
       // 雙等號
       // Java 中的雙等號可以理解為比較值 (基本數據類型，就是值，引用數據類型是內存地址)
       // Scala 中的雙等號可以理解為非空 equals 操作
