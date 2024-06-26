@@ -8,7 +8,9 @@ object Scala02_Oper {
 
       val name : String = "zhangsan"
       val age : Int = 10
-      // Scala 語法中沒有++
+      // Scala 語法中沒有++運算
+      // age++
+      // ++age
 
     }
   }
