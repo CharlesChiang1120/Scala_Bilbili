@@ -19,8 +19,8 @@ object Scala04_Oper {
       val s1 = new String("123")
       val s2 = new String("123")
 
-      println(s1.eq(s2))
-      println(s1 eq s2)
+      // println(s1.eq(s2))
+      // println(s1 eq s2)
       println(s1 equals s2)
 
       val i = 10
