@@ -1,42 +1,35 @@
 package chapter_04
 
-object Scala04_for {
+object Scala04_for_1 {
   def main(args: Array[String]): Unit = {
 
     // TODO 循環控制
-    // 如果表達式條件成立，那麼會執行循環體操作，然後再判斷條件，依此類推
-    // 循環表達式 {
-    //     循環體
-    // }
-    // 循環控制主要為 for, while
-    /*
-       Java :
-       for (int i = 0; i < array.length; i++){
-               sout(i)
-       }
+    val array = 1 to 5
+    val array1 = 1 to 5 by 2
+    val array2 = Range(1, 5, 2)
 
-       for (Object obj : Array) {
-               sout(obj)
-       }
-
-    */
-    /*
-       TODO scala :
-       Scala :
-       for (obj : Object : Array) {
-            println(obj)
-       }
-    */
-    val array = 1 to 5 // 從 1 到 5 (包含), 1, 2, 3, 4, 5
-    val array1 = 1 until 5 // 從 1 到 5 (不包含), 1, 2, 3, 4
-    val array2 = Range(1, 5)
-    for ( i : Int <- array2 ){
-        println(i)
-    }
-
-    for ( i <- array2) {
+    // TODO 循環守衛 : 循環表達式中添加邏輯判斷
+    for ( i <- array if i != 3) {
       println(i)
     }
-  }
 
+    // TODO 循環步長，表示循環的增長幅度，默認幅度為1
+    for (i <- array1) {
+      println(i)
+    }
+
+    for (i <- array2) {
+      println(i)
+    }
+
+    // TODO 循環嵌套
+//    for (i <- 1 to 3) {
+//      for (j <- 1 to 3)
+//        println("i = " + i + ", j = " + j)
+//    }
+    for ( i <- Range(1, 5); j <- Range(1, 4)) {
+      println("i = " + i + ", j = " + j)
+    }
+
+  }
 }
