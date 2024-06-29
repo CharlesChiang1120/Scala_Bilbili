@@ -31,5 +31,13 @@ object Scala04_for_1 {
       println("i = " + i + ", j = " + j)
     }
 
+    // TODO 引入變量
+//    for ( i <- 1 to 3) {
+//        val j = i - 1
+//        println(j)
+//    }
+    for (i <- 1 to 3; j = i - 1) {
+      println(j)
+    }
   }
 }
