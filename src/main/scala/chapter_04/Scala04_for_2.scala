@@ -20,7 +20,7 @@ object Scala04_for_2 {
       i * 2
     }
     println(result)
-    // TODO Java 中線程物件有yield方法，在 Scala 中如何調用
+    // TODO Java 中線程物件有 yield 方法，在 Scala 中如何調用
     Thread.`yield`()
   }
 }
