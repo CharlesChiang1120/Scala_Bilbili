@@ -1,26 +1,35 @@
 package chapter_04
 
-object Scala04_for_2 {
+import scala.io.{BufferedSource, Source}
+
+object Scala05_while {
   def main(args: Array[String]): Unit = {
 
     // TODO 循環控制
+    /*
+       while ( 條件表達式 ) {
+            循環體
+      }
 
-    // TODO 循環返回值
-//    val result = for ( i <- 1 to 3) {
-//      i
+      do {
+          循環體
+      } while ( 條件表達式 )
+     */
+
+//    while (false) {
+//      println("xxxx")
 //    }
-    // 1
-    // 3
-    // 1, 2, 3
-    // println(result) // ()
 
+    do {
+      println("xxxx")
+    } while (false)
 
-    // TODO 如果想要將集合中的數據進行處理後返回，可以採用特殊的關鍵字 : yield
-    val result = for ( i <- 1 to 3) yield {
-      i * 2
-    }
-    println(result)
-    // TODO Java 中線程物件有yield方法，在 Scala 中如何調用
-    Thread.`yield`()
+//    val source: BufferedSource = Source.fromFile("*/data/word.txt")
+//    val iter: Iterator[String] = source.getLines()
+//    while (iter.hasNext){
+//      println(iter.next())
+//    }
+//
+//    source.close()
   }
 }
