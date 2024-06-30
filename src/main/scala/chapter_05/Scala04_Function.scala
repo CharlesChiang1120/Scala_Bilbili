@@ -1,37 +1,73 @@
 package chapter_05
 
 object Scala04_Function {
-  def main(args:Array[String]): Unit ={
-    // TODO 函數式編程語言 - 普通版
-    // 參數的個數
-    // 函數的參數沒有限制個數，但是個數越多，傳值越麻煩，所以並不推薦使用
-    def fun1(
-            name1: String,
-            name2: String,
-            name3: String,
-            name4: String,
-            name5: String
-            ): Unit = {
+  def main(args: Array[String]): Unit = {
+
+    // TODO 函數式編程語言
+    // 函數的應用，說得簡單點就是聲明和使用
+    // 函數其實就是功能的封裝，就意味著功能已經按照特定的規則封裝好了，所以重點在如何調用
+
+//    def headerUpper(s: String): String = {
+//      return s.substring(0, 1).toUpperCase() + s.substring(1)
+//    }
+//
+//    val newString: String = headerUpper("lisi")
+//    println(newString)
+
+    // TODO 函數式編程側重點是: 函數名，輸入參數，返回結果
+    // TODO 函數聲明
+    // 1. 無參，無返回值
+    def fun1(): Unit = {
+      println("fun1...")
     }
 
-    // TODO 參數個數的簡化:可變参数，類似java中參數的...
-    // 在某些場景中，函数的参数可能不需要傳遞，也可能需要傳遞，設置可能需要傳遞多個，不確定
-    // 可變參數因為不確定，所以底層實現時，會採用不同的數組集合來實現
-    def fun2(name:String*):Unit={
-      println(name)
-    }
-    fun2() // List()
-    fun2("ABC") // ArraySeq(ABC)
-    fun2("ABC", "DEF") // ArraySeq(ABC, DEF)
+    // 調用函數的時候，需要指名函數的名稱以及傳遞的參數
+    // 如果參數列表中沒有聲明任何的參數，那個調用時參數列表的小括號可以省略
+    // fun1()
+    // fun1
 
-    // TODO 可變參數的位置: 參數列表的最後一項
-    // 一個參數列表表中不可能有多個可變參數
-    // 也不可以用型態來區分，就算把 password 改成數字型態，也無法區分
-    // ex.(name:String*, password:Int)
-    // 因為如果把 password 改成 object 的型態，這樣也無法區分 name 跟 password
-    // ex.(name:String*, password:Object)
-    def fun3(password:String, name:String*):Unit={
+    // 2. 無參，有返回值
+    def fun2(): String = {
+      return "Zhangsan"
     }
-    fun3("123456", "ABC","DEF")
-  }
+    // 函數如果存在返回值，那麼一般會接收返回值
+    // val result2 = fun2()
+    // println(result2)
+
+    // 3. 有參，無返回值
+    def fun3(name: String): Unit = {
+      println("Name : " + name)
+    }
+
+    // fun3("zhangsan")
+    // 如果函數的參數只有一個時，也不能省略小括號，方法可以省略作為運算符使用
+    // fun3 "zhangsan"
+
+    // 4. 有參，有返回值
+    def fun4(name: String) : String = {
+      return "Name : " + name
+    }
+
+    // val name = fun4("lisi")
+    // println(name)
+
+    // 5. 多參，無返回值
+    def fun5(name: String, age: Int): Unit = {
+      println("Name : " + name + "Age : " + age)
+    }
+
+    // 函數調用時，傳參的值應該和參數一一匹配
+    // 類型要匹配，個數要匹配，順序要匹配
+    // fun5("zhangsan", 20)
+
+    // 6. 多參，有返回值
+    def fun6(name: String, age: Int): String = {
+      return s"Name : ${name},  Age : ${age}"
+    }
+
+    val result6 = fun6("lisi", 20)
+    println(result6)
+
+
+    }
 }
