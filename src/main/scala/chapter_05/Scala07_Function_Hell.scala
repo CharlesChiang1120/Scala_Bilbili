@@ -3,7 +3,7 @@ package chapter_05
 object Scala07_Function_Hell {
   def main(args: Array[String]): Unit = {
 
-    // TODO 函數是編成語言 - 地獄版
+    // TODO 函數式編程語言 - 地獄版
     /*
       Scala 語言是完全物件導向的語言，所以萬物皆物件
       Scala 語言是完全面向函數式編程語言，所以萬物皆函數

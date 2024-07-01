@@ -6,7 +6,7 @@ import scala.util.control.Breaks._
 object Scala08_Function_Abstract {
   def main(args: Array[String]): Unit = {
 
-    // TODO 函數是編成語言 - 控制抽象
+    // TODO 函數式編程語言 - 控制抽象
     // 抽象: 不完整
     // 抽象類: 不完整的類
     // 抽象方法: 不完整的方法

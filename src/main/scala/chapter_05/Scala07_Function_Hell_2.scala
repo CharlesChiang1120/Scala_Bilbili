@@ -3,7 +3,7 @@ package chapter_05
 object Scala07_Function_Hell_2 {
   def main(args: Array[String]): Unit = {
 
-    // TODO 函數是編成語言 - 地獄版
+    // TODO 函數式編程語言 - 地獄版
     // 函數其實就是物件
     // 1. 物件應該有類型
     // 2. 物件應該可以賦值給其他人使用

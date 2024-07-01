@@ -3,7 +3,7 @@ package chapter_05
 object Scala05_Function_Normal_1 {
   def main(args:Array[String]): Unit ={
 
-    // TODO 函數是編成語言 - 普通版
+    // TODO 函數式編程語言 - 普通版
     // 希望參數有默認值: 如果不傳遞，那參數自動使用默認值
 
     // Scala 實現不了這個操作: 函數的參數默認使用 val 聲明

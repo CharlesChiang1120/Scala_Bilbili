@@ -3,7 +3,7 @@ package chapter_05
 object Scala07_Function_Hell_5 {
   def main(args: Array[String]): Unit = {
 
-    // TODO 函數是編成語言 - 地獄版
+    // TODO 函數式編程語言 - 地獄版
 
     // 如果函數的名稱不重要，那麼在傳參數時，就可以省略函數名稱
     def test(f: (Int, Int) => Int): Unit = {

@@ -3,7 +3,7 @@ package chapter_05
 object Scala06_Function_NightMare {
   def main(args: Array[String]): Unit = {
 
-    // TODO 函數是編成語言 - 噩夢版
+    // TODO 函數式編程語言 - 噩夢版
     // TODO Scala 語言的作者馬丁，為了開發人員可以更加便捷地開發程序，所以可以簡化很多代碼
     //      如果編譯器可以動態識別的語法，那開發人員是可以不需要編碼的，可以省略
     //      這體現了[至簡原則]: 能省則省
