@@ -56,7 +56,7 @@ object Scala07_Hell_1 {
     //     這裡類型中的1表示函數參數列表中參數的個數
     //     中括號中的 Int 表示函數參數的類型
     //     中括號中的 String 表示函數返回值的類型
-    val f: Function1[Int, String] = test1 _
+//    val f: Function1[Int, String] = test1 _
 
     // TODO [函數物件]的參數最多只能有22個
     //      [函數]的參數個數可以有無限多個
@@ -65,6 +65,17 @@ object Scala07_Hell_1 {
 //      21,22,23,24,25)
 
     // error message: functions may not have more than 22 parameters; method test2 cannot be eta-expanded because it takes 25 arguments
-    val ff = test2 _
+//    val ff = test2 _
+
+    // TODO 為了使用方便，函數類型可以使用另外一種聲明方式
+    // 這裡的函數類型為: Int(參數列表的參數類型) => String(返回值類型)
+    val f = test1 _
+
+    def test3(name: String, age:Int): Unit = {
+
     }
+    // (String, Int) => Unit
+    val f3 = test3 _
+
+  }
 }
