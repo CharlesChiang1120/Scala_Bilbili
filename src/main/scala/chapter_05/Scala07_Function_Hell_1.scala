@@ -1,6 +1,6 @@
 package chapter_05
 
-object Scala07_Hell_1 {
+object Scala07_Function_Hell_1 {
   def main(args: Array[String]): Unit = {
 
     // TODO 函數是編成語言 - 地獄版
