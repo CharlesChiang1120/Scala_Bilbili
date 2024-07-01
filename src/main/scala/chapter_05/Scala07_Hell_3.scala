@@ -24,7 +24,11 @@ object Scala07_Hell_3 {
     }
 
     val f = fun _
+    // 不加下滑線，可以這樣寫
+    // 明確告訴f1是函數物件
+    val f1: ()=>Unit = fun
     test(f)
+    test(f1)
 
   }
 }
