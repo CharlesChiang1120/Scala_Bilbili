@@ -4,4 +4,4 @@ data/*
 build.sbt
 project/*
 target/*
-
+src/main/scala/.DS_Store
