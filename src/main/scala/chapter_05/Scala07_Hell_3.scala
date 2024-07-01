@@ -8,10 +8,13 @@ object Scala07_Hell_3 {
       TODO Java:
 
       public void test(User u) {
-          user.xxxx();
+          u.xxxx();
+          u.yyyy();
       }
       User user = new User()
       test(user)
+
+      test(new User())
 
      */
     // TODO 將函數物件作為參數使用
