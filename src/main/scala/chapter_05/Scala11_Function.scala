@@ -19,6 +19,7 @@ object Scala11_Function {
 //    }
 
     // TODO 階乘
+    // TODO Scala 中的泛型的返回值類型不能省略
     def test(num: Int): Int = {
       if (num <= 1) {
         1
