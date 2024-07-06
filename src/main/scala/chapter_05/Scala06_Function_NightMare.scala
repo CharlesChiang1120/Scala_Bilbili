@@ -37,7 +37,7 @@ object Scala06_Function_NightMare {
     //     println(test4)
 
     // TODO 5. 等號可以省略，但是一般是和 Unit 同時省略
-    //  如果邏輯代碼中 return 返回，但是函數聲明為 Unit，此時 return 不起作用
+    // 如果邏輯代碼中 return 返回，但是函數聲明為 Unit，此時 return 不起作用
     // 如果想要省略 Unit，那麼會發生錯誤，如果想省略 Unit，又不想發生錯誤，可以將等號同時省略
     def test5() {
       return "zhangsan"
