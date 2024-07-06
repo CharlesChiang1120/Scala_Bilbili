@@ -26,6 +26,7 @@ package chapter_06 {
       // 2. 可以給包設定作用域，體現上下級關係
       // 3. 將包也當作物件: package object xxxxx
       //    包物件中聲明的屬性和方法，在當前包和它的子包都可以直接訪問
+      // 4. Scala 中包名和物理路徑沒有關係
       testPackageObject()
     }
   }
