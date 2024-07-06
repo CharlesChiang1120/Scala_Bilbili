@@ -2,7 +2,6 @@ package chapter_06
 
 import java.util
 
-
 object Scala03_Object_Import {
     def main(args: Array[String]): Unit = {
       // TODO 物件導向編程
@@ -60,8 +59,8 @@ object Scala03_Object_Import {
 //  }
   }
 
-package java {
-  package util {
-    class HashMap
-  }
-}
+//package java {
+//  package util {
+//    class HashMap
+//  }
+//}
