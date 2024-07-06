@@ -17,3 +17,6 @@
 
 6. Import 類時，用於屏蔽
    import java.util.{Date=>_, _}
+
+7. 屬性默認初始化
+   var name: String = _
