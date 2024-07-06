@@ -12,7 +12,7 @@ object Scala12_Function {
       "zhangsan"
     }
 
-    lazy  val a = fun9()
+    lazy val a = fun9()
     // val a = fun9() // 10000 User
     println("---------") // 1 hour
     println(a) // 用到它的結果 再讓他執行
