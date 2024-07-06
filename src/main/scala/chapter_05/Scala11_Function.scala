@@ -20,15 +20,36 @@ object Scala11_Function {
 
     // TODO 階乘
     // TODO Scala 中的泛型的返回值類型不能省略
-    def test(num: Int): Int = {
-      if (num <= 1) {
-        1
-      } else {
-        num * test(num - 1)
-      }
+//    def test(num: Int): Int = {
+//      if (num <= 1) {
+//        1
+//      } else {
+//        num * test(num - 1)
+//      }
+//    }
+//
+//    println(test(5))
+
+    // TODO Java 的棧內存有大小限制的
+    // 方法執行時，壓棧的內存也是有大小的，那麼棧內存不可能無限壓棧
+    // 如果壓棧的次數超國閥值，就會出現錯誤，即使有跳出的邏輯也會出錯
+    // Scala 採用了一種特殊的語法優化遞歸操作，尾(偽)遞歸
+    // Scala 採用 while 循環實現尾遞歸
+    // Java 中的尾遞歸是沒有優化
+
+    def test(): Unit = {
+      println("test.....")
+      test()
     }
 
-    println(test(5))
+    test()
+
+    // JAVA decompile
+//    private final void test$1 () {
+//      while (true) {
+//        .MODULE$.println("test.....");
+//      }
+//    }
 
   }
 }
