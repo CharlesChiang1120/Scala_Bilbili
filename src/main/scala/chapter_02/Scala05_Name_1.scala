@@ -29,7 +29,7 @@ object Scala05_Name_1 {
     val :-> = "zhangsan"
 
     // 本質上特殊符號在編譯後會被編譯器轉換，所以可以使用
-    //一般情況下，不推薦使用$開頭
+    // 一般情況下，不推薦使用$開頭
     // $colon$minus$greater in Java
     println(:->)
 
