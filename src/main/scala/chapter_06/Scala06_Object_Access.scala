@@ -41,7 +41,8 @@ object Scala06_Object_Access {
             val user = new User()
             // println(user.name) // X
             // println(user.age)
-            println(user.email) // 子類
+            // 子類
+            // println(user.email)
             println(user.address)
         }
     }
