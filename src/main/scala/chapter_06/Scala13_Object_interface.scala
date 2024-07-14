@@ -19,7 +19,7 @@ object Scala13_Object_interface {
       val cat = new Cat()
       cat.run()
 
-      // TODO 特質的本質是接口
+      // TODO 特質的本質是接口，編譯後的字節碼就是 interface
     }
   // 特質
   trait Run {
