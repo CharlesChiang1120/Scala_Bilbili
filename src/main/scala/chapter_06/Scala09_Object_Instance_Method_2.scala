@@ -13,7 +13,6 @@ object Scala09_Object_Instance_Method_2 {
 
     class User(var name: String) {
 
-
     }
 }
 
