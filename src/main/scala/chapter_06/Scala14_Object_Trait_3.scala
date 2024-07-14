@@ -28,7 +28,7 @@ object Scala14_Object_Trait_3 {
     override def operateData(): Unit = {
       // TODO 操作數據
       print("向數據庫中")
-      super.operateData()
+      super[Operate].operateData()
     }
   }
   trait Log extends Operate {
@@ -39,7 +39,7 @@ object Scala14_Object_Trait_3 {
       super.operateData()
     }
   }
-  class MySQL extends Database with Log {
+  class MySQL extends Log with Database {
 
   }
 }
