@@ -3,7 +3,7 @@ package chapter_06
 object Scala14_Object_Trait_2 {
   def main(args: Array[String]): Unit = {
 
-    // TODO 物件導向編程 - 特徵的初始化順序
+    // TODO 物件導向編程 - 特徵的執行順序
     // 1. 將 trait 理解為抽象類，所以 trait的初始化順序應該優於當前的類
     //    Trait > current Class
     val user = new User()
