@@ -1,46 +1,34 @@
 package chapter_06
 
-object Scala14_Object_Trait_3 {
+object Scala15_Object_Ext {
   def main(args: Array[String]): Unit = {
 
-    // TODO 物件導向編程 - 特徵的執行順序
-    // 類混入特質時，也存在鑽石問題，但是 Scala 採用了一種特殊的方式來解決
-    // 1. 為什麼混入特質
-    //    增加約束
-    //    功能的補充和疊加
-    // 2. 如果混入了多個相同的功能，那麼就需要一個執行的順序，否則會出現錯誤
+    // TODO 物件導向編程 - 比較兩個物件
+    // 1. Scala 和 Java 中，一般情況下，比較兩個對象的內存的場景比較少
+    //    比較兩個物件都是內容(屬性)的比較
+    // 2. Scala 中雙等號比較其實就是非空 equals 判斷，但是這裡的 equals 判斷默認就是比較內存
+    //    但是一般情況下，比較物件，都是重寫 equals 方法，完成自定義比較功能
+    // 3. 重寫 equals 方法時，首先應判斷類型是否相同
+    val user1 = new User()
+    user1.id  = 1001
+    val user2 = new User()
+    user2.id  = 1001
 
-    // Scala 如何解決鑽石問題:
-    // 將多個功能混入在一起，按照特定的執行順序進行疊加調用
-    // 這裡的特定執行順序其實就是初始化順序的反向操作
-
-    val mysql = new MySQL
-    mysql.operateData()
+    println(user1 == user2)
 
   }
-  trait Operate {
-    def operateData(): Unit = {
-      // TODO 操作數據
-      println("進行數據處理")
+
+  class User {
+    var id: Int = _
+
+    override def equals(other: Any): Boolean = {
+      if (other.isInstanceOf[User]) {
+        val otherUser = other.asInstanceOf[User]
+        this.id == otherUser.id
+      } else {
+        false
+      }
     }
-  }
-  trait Database extends Operate {
-    override def operateData(): Unit = {
-      // TODO 操作數據
-      print("向數據庫中")
-      super[Operate].operateData()
-    }
-  }
-  trait Log extends Operate {
-    override def operateData(): Unit = {
-      // TODO 操作數據
-      print("向日誌文件中")
-      // 這裡的 super 不是表示父特質，而是表示疊加功能後的上一級
-      super.operateData()
-    }
-  }
-  class MySQL extends Log with Database {
-
   }
 }
 
