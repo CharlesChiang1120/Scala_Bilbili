@@ -15,9 +15,6 @@ object Scala09_Object_Instance_Method_2 {
 
 
     }
-
-
-
 }
 
 
