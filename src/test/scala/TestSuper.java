@@ -1,2 +1,8 @@
-package PACKAGE_NAME;public class TestSuper {
+public class TestSuper {
+    public static void main(String[] args) {
+
+        Child c = new Child();
+        c.test();
+
+    }
 }

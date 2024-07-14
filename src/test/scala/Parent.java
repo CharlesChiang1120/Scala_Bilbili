@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public class Parent {
+public class Parent {
+    public String name = "zhangsan";
 }
