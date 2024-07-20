@@ -22,8 +22,5 @@ object Scala04_Collection_Seq {
     println(seq1)
     println(list)
     println(list1)
-
-
-
   }
 }
