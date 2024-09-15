@@ -6,7 +6,7 @@ import scala.math
 object Scala12_Collection_Method_WordCount {
   def main(args: Array[String]): Unit = {
 
-    // TODO 使用功能函數實現 WordCOunt
+    // TODO 使用功能函數實現 WordCount
     //      統計一個單詞出現的次數(頻率) -> 詞頻統計
     // (Hello, 4), (World, 3), (Scala, 2), (Spark, 1)
 
