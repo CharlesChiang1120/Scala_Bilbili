@@ -13,5 +13,6 @@ object Scala09_Collection_1 {
     println(opt2)
     println(opt3.getOrElse(0))
 
+    val t = (1, "zhangsan", 30)
   }
 }
