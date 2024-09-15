@@ -3,7 +3,7 @@ package chapter_07
 object Scala08_Collection_Tuple {
   def main(args: Array[String]): Unit = {
 
-    // TODO 集合
+    // TODO 集合 - Map(映射, 關聯)
     // 集合其實就是數據的容器，可以容納數據
     // 如果像要讓無關的數據當作一個整體來使用
     // 1. 如果數據之間有關係，一般生成 Bean 物件，對應屬性
