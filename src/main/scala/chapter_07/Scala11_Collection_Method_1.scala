@@ -3,7 +3,7 @@ package chapter_07
 object Scala11_Collection_Method_1 {
   def main(args: Array[String]): Unit = {
 
-    // TODO 集合 - 通用的方法
+    // TODO 集合 - 通用的方法 - 會產生新的集合
     val list = List(1, 2, 3, 4)
     // 從集合中獲取一部分數據
 
