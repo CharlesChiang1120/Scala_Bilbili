@@ -29,7 +29,5 @@ object Scala11_Collection_Method_2 {
       println(tails.next())
     }
 
-
-
   }
 }
