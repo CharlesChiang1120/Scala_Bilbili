@@ -15,11 +15,5 @@ object Scala11_Collection_Method {
     println(list.distinct) // 集合去重
     println(list.mkString(", ")) // 生成字符串
     list.foreach(println) // 循環遍歷
-
-
-
-
-
-
   }
 }
