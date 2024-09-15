@@ -47,6 +47,8 @@ object Scala12_Collection_Method_WordCount {
         kv._1
       }
     )
+    // HashMap(Scala -> List((Scala,1), (Scala,1)), Hello -> List((Hello,1), (Hello,1), (Hello,1), (Hello,1)), Spark -> List((Spark,1)), World -> List((World,1), (World,1), (World,1)))
+//    println(wordGroup)
 
     // 5. 將聚合後的數據統計
     // list => count
@@ -55,6 +57,8 @@ object Scala12_Collection_Method_WordCount {
         list.size
       }
     ).toMap
+    // Map(Scala -> 2, Hello -> 4, Spark -> 1, World -> 3)
+//    println(wordCount)
 
     // 5.5 將統計的結果按照數量進行排序，取前三名
     // 分組後的結果為 Map 類型，Map 類型沒有順序，所以無法排序
@@ -65,11 +69,7 @@ object Scala12_Collection_Method_WordCount {
     )(Ordering.Int.reverse).take(3)
 
     // 6. 將結果打印在控制台上
+    // List((Hello,4), (World,3), (Scala,2))
     println(top3)
-
-
-
-
-
   }
 }
