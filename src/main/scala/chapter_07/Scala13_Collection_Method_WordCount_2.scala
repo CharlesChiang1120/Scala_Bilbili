@@ -25,12 +25,7 @@ object Scala13_Collection_Method_WordCount_1 {
       }
     ).groupBy(
       kv => kv._1
-    )
-      .mapValues(
-        list => {
-          list.map(_._2).sum
-        }
-      ).foreach(println)
+    ).foreach(println)
 
     // (Hello, 1), (Hello, 2), (Hello, 3), (Hello, 4)
     // (Hello, 10)
