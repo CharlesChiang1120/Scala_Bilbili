@@ -14,10 +14,28 @@ object Scala01_transform {
 
     // 2. Scala 中沒有字符串，使用的時候用的就是 Java 的字符串
     //    Java 中的字符串是一個類，沒有小括號訪問的方式
+    //    Java 中的字符串沒有 apply 方法
+//    val s = "hello" // Hello
+//    val ss = s.apply(0).toUpper + s.substring(1)
+//    println(ss)
 
-    val s = "hello" // Hello
-    val ss = s(0).toUpper + s.substring(1)
-    println(ss)
+    // 3. 程序允許擴展功能，但是應該對修改關閉，OCP 開發原則
+    val user = new User() with Update
+    user.insertUser()
+    user.updateUser()
   }
+  trait Update {
+        def updateUser(): Unit = {
+          println("update user...")
+        }
+  }
+  class User {
+    def insertUser(): Unit = {
+      println("insert user...")
+    }
+    def getUser() = {
+      new User()
+    }
 
+  }
 }
