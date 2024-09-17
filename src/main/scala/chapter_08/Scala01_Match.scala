@@ -25,9 +25,5 @@ object Scala01_Match {
         println("其他")
       }
     }
-
-
-
   }
-
 }
