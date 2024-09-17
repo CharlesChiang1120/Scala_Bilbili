@@ -30,19 +30,19 @@ object Scala07_transform extends OtherTrait {
 }
 
 class OtherClass {
-  implicit class UserExt(user: User) {
-    def updateUser(): Unit = {
-      println("Update user...")
-    }
-  }
+//  implicit class UserExt(user: User) {
+//    def updateUser(): Unit = {
+//      println("Update user...")
+//    }
+//  }
 }
 
 object OtherClass {
-  implicit class UserExtInObject(user: User) {
-    def updateUser(): Unit = {
-      println("Update user...")
-    }
-  }
+//  implicit class UserExt(user: User) {
+//    def updateUser(): Unit = {
+//      println("Update user...")
+//    }
+//  }
 }
 
 trait OtherTrait {
@@ -53,13 +53,13 @@ trait OtherTrait {
   }
 }
 
-//object OtherTrait {
+object OtherTrait {
 //  implicit class UserExt(user: User) {
 //    def updateUser(): Unit = {
 //      println("Update user...")
 //    }
 //  }
-//}
+}
 
 //implicit class UserExt(user: User) {
 //  def updateUser(): Unit = {
