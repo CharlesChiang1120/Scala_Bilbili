@@ -19,6 +19,7 @@ object Scala04_Match {
     // 真正的泛型只在編譯時有效，而 Array 的泛型在運行時也有效
     // 3. 如果 case 後直接寫類型，並不表示類型匹配，而是物件匹配
     def describe(x: Any): String = x match {
+      // 直接寫 case Int => "Int" 會等同於匹配物件
       case i: Int => "Int"
       case s: String => "String hello"
       case m: List[String] => "List"
