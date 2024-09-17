@@ -18,6 +18,8 @@ object Scala02_Exception {
       case e: Exception => {
         println("Exception: " + e.getMessage)
       }
+    } finally {
+
     }
   }
 }
