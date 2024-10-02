@@ -30,7 +30,7 @@ object Scala03_Generic_Scala {
   }
 
   class Consumer[T] {
-    def consume(message: Message[_ <: T]):{
+    def consume(message: Message[_ <: T]): Unit ={
       null
     }
   }
